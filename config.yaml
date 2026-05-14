@@ -1,0 +1,22 @@
+fixed_texts:
+  purchase_reason: "입찰 결과에 따라 최저가 업체 선정에 의한 구매 요청입니다."
+  attachments: "전자입찰 결과표 1부"
+
+validation:
+  max_file_size_mb: 10
+  allowed_extensions:
+    - ".html"
+
+security:
+  blocked_script_patterns:
+    - "<script"
+    - "javascript:"
+    - "onerror="
+    - "onload="
+    - "eval("
+    - "document.cookie"
+
+llm:
+  model: "gpt-3.5-turbo"
+  max_tokens: 2048
+  max_retries: 1
